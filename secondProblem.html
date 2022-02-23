@@ -5,13 +5,9 @@
 
 	alert("Let's calculate the area of the trapezoid");
     
-    var a = prompt("Enter base length:");
-    var b = prompt("Enter second base length:");
-    var h = prompt("Enter height:");
-
-    var a = parseInt(a);
-    var b = parseInt(b);
-    var h = parseInt(h);
+    var a = +prompt("Enter base length:");
+    var b = +prompt("Enter second base length:");
+    var h = +prompt("Enter height:");
 
     var area = ((a + b) / 2) * h;
 
