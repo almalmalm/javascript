@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+//Money investing app 
+
+alert("I will calculate how much money will accumulate in 5 years.")
+
+var moneyDeposit = +prompt("How much money do you want to invest?");
+var annualPercentage = prompt("What is the annual percentage?");
+var annualPercentage = parseFloat(annualPercentage);
+var basePrecentage = annualPercentage/100;
+
+var moneyDepositFirstYear = moneyDeposit * basePrecentage + moneyDeposit;
+var moneyDepositSecondYear = moneyDepositFirstYear * basePrecentage + moneyDepositFirstYear;
+var moneyDepositThirdYear = moneyDepositSecondYear * basePrecentage + moneyDepositSecondYear;
+var moneyDepositFourthYear = moneyDepositThirdYear * basePrecentage + moneyDepositThirdYear;
+var moneyDepositFifthYear = moneyDepositFourthYear * basePrecentage + moneyDepositFourthYear;
+
+alert("Amount of money u can accumulate from " + parseInt(moneyDeposit) +":\n1 year: " + parseInt(moneyDepositFirstYear) + "\n2 year: " + parseInt(moneyDepositSecondYear) + "\n3 year: " + parseInt(moneyDepositThirdYear) + "\n4 year: " + parseInt(moneyDepositFourthYear) + "\n5 year: " + parseInt(moneyDepositFifthYear));
+
+</script>    
