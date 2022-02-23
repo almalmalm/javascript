@@ -1,0 +1,42 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+//Riddle game
+
+alert("Guess my riddle.");
+
+
+var answer = "An egg";
+var userAnswer = prompt("What has to be broken before you can use it?");
+
+while(userAnswer!=answer){
+    alert("Nope. Try again.");
+    userAnswer = prompt("What has to be broken before you can use it?");
+}
+if(userAnswer==answer){
+    alert("Correct!\nThe game is end.");
+}
+
+//Second game
+
+alert("The second game.");
+
+var firstUserAnswer = prompt("What begins with T, finishes with T, and has T in it?");
+var secondUserAnswer = prompt("You bought me for dinner but never eat me. What am I?");
+var thirdUserAnswer = prompt("What kind of vegetables are the most fun at parties?");
+
+firstAnswer = "A teapot";
+secondAnswer = "Cutlery";
+thirdAnswer = "Fungi";
+
+if(firstUserAnswer==firstAnswer && secondUserAnswer==secondAnswer && thirdUserAnswer==thirdAnswer){
+    alert("Congratulations! 3 correct answers.")
+}else if((firstUserAnswer==firstAnswer && secondUserAnswer==secondAnswer) || (secondUserAnswer==secondAnswer && thirdUserAnswer==thirdAnswer) || (firstUserAnswer==firstAnswer && thirdUserAnswer==thirdAnswer)){
+    alert("Congratulations! 2 correct answers.")
+}else if(firstUserAnswer==firstAnswer || secondUserAnswer==secondAnswer || thirdUserAnswer==thirdAnswer){
+    alert("Congratulations! 1 correct answers.")
+}else{
+    alert("0 correct answers.")
+}
+
+</script>
